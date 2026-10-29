@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" width="200" height="200">
+<defs>
+<radialGradient id="g" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#5aa2e6"/><stop offset=".7" stop-color="#1f5fa6"/><stop offset="1" stop-color="#123f74"/></radialGradient>
+<path id="ta" d="M28 100 A72 72 0 0 1 172 100"/>
+<path id="tb" d="M22 100 A78 78 0 0 0 178 100"/>
+<clipPath id="c"><circle cx="100" cy="100" r="54"/></clipPath>
+</defs>
+<circle cx="100" cy="100" r="97" fill="#fff"/>
+<circle cx="100" cy="100" r="93" fill="#123f74"/>
+<circle cx="100" cy="100" r="62" fill="#fff"/>
+<circle cx="100" cy="100" r="57" fill="url(#g)"/>
+<g clip-path="url(#c)" fill="none" stroke="#bcd9f5" stroke-width="1.6" opacity=".8">
+<ellipse cx="100" cy="100" rx="22" ry="54"/><ellipse cx="100" cy="100" rx="44" ry="54"/><path d="M100 46V154M46 100H154M52 78H148M52 122H148"/>
+</g>
+<g clip-path="url(#c)">
+<path d="M40 128 L70 96 L82 106 L104 78 L122 98 L134 90 L162 124 V160 H40Z" fill="#fff"/>
+<path d="M98 86 L104 78 L111 87 L106 84 L102 89Z" fill="#cfe3f7"/>
+<path d="M40 132 q10 -7 20 0 t20 0 t20 0 t20 0 t20 0 t20 0 V160 H40Z" fill="#2e86d4"/>
+<path d="M40 142 q10 -7 20 0 t20 0 t20 0 t20 0 t20 0 t20 0" fill="none" stroke="#fff" stroke-width="2.4"/>
+</g>
+<g transform="translate(64 60)" fill="#ffd04a" stroke="#123f74" stroke-width="1">
+<circle cx="0" cy="0" r="9"/>
+</g>
+<path d="M78 54 h52 l-8 -6 M130 54 l-8 6" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+<path d="M84 54 l-4 -7 M92 54 l-4 -7 M100 54 l-4 -7" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+<g font-family="Arial, Helvetica, sans-serif" font-weight="bold" fill="#fff" text-anchor="middle">
+<text font-size="17" letter-spacing="2"><textPath xlink:href="#ta" startOffset="50%">IRAD GIDROMET</textPath></text>
+<text font-size="14" letter-spacing="1.5" dy="11"><textPath xlink:href="#tb" startOffset="50%">★ ИРАДГИДРОМЕТ ★</textPath></text>
+</g>
+<circle cx="25" cy="100" r="3" fill="#ffd04a"/><circle cx="175" cy="100" r="3" fill="#ffd04a"/>
+</svg>

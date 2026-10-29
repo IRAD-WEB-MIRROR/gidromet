@@ -1,0 +1,35 @@
+{
+  "notices": [
+    {
+      "date": "2026-10-27",
+      "title": {
+        "en": "Heating season: air quality",
+        "ir": "Jılytuu mezgili: abanın sapatı",
+        "ru": "Отопительный сезон: качество воздуха"
+      },
+      "text": {
+        "en": "With the heating season under way, fine-particle levels in Nurzhan rise on cold, still evenings. People with heart or lung disease are advised to follow the index on this site.",
+        "ir": "Jılytuu mezgili bashtalgandan beri Nurzhanda suuk, tınch kechterde mayda bölükchölördün deñgeeli kötörülöt. Jürök je öpkö oorusu barlarga bul sayttagı indeksti karap turuu sunushtalat.",
+        "ru": "С началом отопительного сезона уровень мелких частиц в Нуржане растёт в холодные безветренные вечера. Людям с болезнями сердца и лёгких рекомендуется следить за индексом на этом сайте."
+      },
+      "signed": {
+        "en": "S. Musaeva, chief forecaster",
+        "ir": "S. Musaeva, bash sinoptik",
+        "ru": "С. Мусаева, главный синоптик"
+      }
+    },
+    {
+      "date": "2026-10-20",
+      "title": {
+        "en": "Mountain passes: first snow",
+        "ir": "Tooluu ashuular: algachkı kar",
+        "ru": "Горные перевалы: первый снег"
+      },
+      "text": {
+        "en": "Snow is expected on the Fergana Gateway and the higher passes from the end of October. Drivers on State Route 1 should follow the Gendarmerie's notices on the Otmek tunnel and the pass.",
+        "ir": "Oktyabrdın ayagınan Fergana Darbazasında jana biyik ashuularda kar kütülöt. 1-mamlekettik jol menen jürgön aydoochular Otmek tunneli jana ashuu boyuncha jandarmeriyanın bildirüülörün karap turuusu kerek.",
+        "ru": "С конца октября ожидается снег на Ферганских воротах и высоких перевалах. Водителям на трассе № 1 следует следить за сообщениями жандармерии об Отмекском тоннеле и перевале."
+      }
+    }
+  ]
+}
