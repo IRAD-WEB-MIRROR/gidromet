@@ -225,9 +225,19 @@
         else if (a.heavy && p.e > 2500) st = '<span class="st no">' + esc(t("mtClosure")) + "</span>";
         else if ((a.snow || a.lo <= -2) && p.e > 1800) st = '<span class="st warn">' + esc(t("mtChains")) + "</span>";
         else st = '<span class="st ok">' + esc(t("mtOpen")) + "</span>";
+        var r = seasonRoad(d, p.id);   /* the season block (today.json) decides the road, the same on every site */
+        if (r) st = '<span class="st ' + ({ open: "ok", chains: "warn" }[r.status] || "no") + '">' + esc(t({ open: "mtOpen", chains: "mtChains", closed: "mtShut", winter: "mtSeason" }[r.status] || "mtOpen")) + "</span>";
         return "<tr><td><b>" + esc(tri(p.n)) + '</b><br><span class="small muted">' + esc(tri(p.r)) + '</span></td><td class="num nw">' + esc(t("mtM", { v: p.e.toLocaleString("en").replace(",", LANG === "en" ? "," : " ") })) +
           "</td><td data-l=\"" + esc(t("mtToday")) + "\">" + esc(a.txt) + "</td><td data-l=\"" + esc(t("mtTom")) + "\">" + (b ? esc(b.txt) : "") + "</td><td>" + st + "</td></tr>";
-      }).join("") + "</tbody></table></div>";
+      }).join("") + "</tbody></table></div>" + avaBox(d);
+  }
+  function seasonRoad(d, id) { return d.season && d.season.roads ? d.season.roads.filter(function (r) { return r.id === id; })[0] : null; }
+  function avaBox(d) {
+    var se = d.season; if (!se || !se.avalanche) return "";
+    var a = se.avalanche, h = "";
+    if (se.winter && se.since) h += '<p class="small"><b>' + esc(t("winterSince", { d: fmtDate(se.since) })) + "</b></p>";
+    return h + '<div class="ava lv' + a.level + '"><b>' + esc(t("avaK")) + ":</b> " +
+      (a.level ? '<span class="lvn">' + a.level + "</span> " + esc(t("avaV", { l: tri(a.label).replace(/^\d\s*/, ""), a: tri(a.area), n: a.new_snow_cm })) : esc(t("avaNone"))) + "</div>";
   }
   function warnings(d) {
     var el = $("#warnStrip"); if (!el) return;
@@ -240,6 +250,10 @@
     d.air.forEach(function (a) { if (a.aqi > 100) { var c = tri(a.label); (air[c] = air[c] || []).push(tri(a.name)); } });
     var fg = stWx(d, MAP.st.filter(function (s) { return s.id === "alabel"; })[0], 0);
     if (fg && (fg.code === 73 || fg.code === 68)) out.push(esc(t("wSnowPass", { v: deg(fg.hi) })));
+    if (d.season) {
+      if (d.season.fergana_gateway === "closed") out.unshift(esc(t("wGate")));
+      if (d.season.avalanche && d.season.avalanche.level >= 3) out.push(esc(t("wAva", { l: tri(d.season.avalanche.label) })));
+    }
     if (heavy.length) out.push(esc(t("wHeavy", { p: heavy.join(", ") })));
     if (frost.length) out.push(esc(t("wFrost", { v: deg(minLo), p: frost.join(", ") })));
     Object.keys(air).forEach(function (c) { out.push(esc(t("wAir", { c: c, p: air[c].join(", ") }))); });
