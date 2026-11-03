@@ -147,6 +147,7 @@
       lcol.innerHTML =
         '<div class="lbox menu-box"><div class="h">' + esc(t("lcMenu")) + '</div><div class="b"><ul>' +
         SITE.nav.map(function (x) { return '<li><a href="' + x[1] + '"' + (x[0] === PAGE ? ' aria-current="page"' : "") + ">" + esc(t("nav_" + x[0])) + "</a>" + (x[0] === "map" ? ' <span class="new">' + esc(t("newB")) + "</span>" : "") + "</li>"; }).join("") +
+        '<li><a href="/webcam.html"' + (PAGE === "webcam" ? ' aria-current="page"' : "") + ">" + esc(t("nav_webcam")) + '</a> <span class="new">' + esc(t("newB")) + "</span></li>" +
         "</ul></div></div>" +
         '<div class="lbox"><div class="h">' + esc(t("lcCities")) + '</div><div class="b" id="lcCities"></div></div>' +
         '<div class="lbox"><div class="h">' + esc(t("tkFill")) + '</div><div class="b tk" id="lcTk"></div></div>' +
