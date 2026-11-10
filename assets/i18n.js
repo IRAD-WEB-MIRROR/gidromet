@@ -592,7 +592,7 @@ window.SITE_I18N = {
       "mpH1": "Aba ırayı kartası",
       "mpLead": "Bügünkü jana kiyinki eki kündün aba ırayı, Zonanın negizgi beketteri jana posttoru boyuncha. Toolordogu posttordun sandarı eñ jakın negizgi beketten biyiktikke jaraısha eseptelet (ar bir 1 000 m sayın 6,5°).",
       "mpNetH": "Baykoo tarmagı",
-      "mpNet": "Kızmattın tört negizgi aba ırayı beketi Talasta, Nurzhanda, Iyık Janylda jana Tash-Kömürdö ishteyt. Tooluu posttor 1-mamlekettik joldo, Aksayda jana Otmekte, rayondık posttor Kızıl-Adırda, Toktogulda, Bazar-Korgondo jana Boz-Korgondo. Manas chokusundagı observatoriya özünün aba ırayı jana kar körsötküchtörün Kızmat menen bölüshöt. Nurzhandın jakınındagı Kök-Döbö radarı Chüy öröönündögü jaan-chachındı karayt.",
+      "mpNet": "Kızmattın jeti negizgi aba ırayı beketi Talasta, Nurzhanda, Iyık Janylda, Kızıl-Adırda, Toktogulda, Bazar-Korgondo jana Merkede ishteyt. Tooluu posttor 1-mamlekettik joldo, Aksayda jana Otmekte, rayondık posttor Tash-Kömürdö, Sarı-Bulakta jana Boz-Korgondo. Manas chokusundagı observatoriya özünün aba ırayı jana kar körsötküchtörün Kızmat menen bölüshöt. Nurzhandın jakınındagı Kök-Döbö radarı Chüy öröönündögü jaan-chachındı karayt.",
       "title_map": "Aba ırayı kartası"
     },
     "ru": {
@@ -680,7 +680,7 @@ window.SITE_I18N = {
       "mpH1": "Карта погоды",
       "mpLead": "Погода на сегодня и два следующих дня по основным станциям и постам Зоны. Данные горных постов рассчитываются по ближайшей основной станции с поправкой на высоту (6,5° на каждые 1000 м).",
       "mpNetH": "Сеть наблюдений",
-      "mpNet": "Служба ведёт наблюдения на четырёх основных метеостанциях: в Таласе, Нуржане, Ийык Джаныле и Таш-Кумыре. Горные посты расположены на трассе № 1, в Аксае и Отмеке, районные посты — в Кызыл-Адыре, Токтогуле, Базар-Коргоне и Боз-Коргоне. Обсерватория на пике Манас передаёт службе свои данные о погоде и снеге. Радар Кок-Дёбё близ Нуржана следит за осадками в Чуйской долине.",
+      "mpNet": "Служба ведёт наблюдения на семи основных метеостанциях: в Таласе, Нуржане, Ийык Джаныле, Кызыл-Адыре, Токтогуле, Базар-Коргоне и Мерке. Горные посты расположены на трассе № 1, в Аксае и Отмеке, районные посты — в Таш-Кумыре, Сары-Булаке и Боз-Коргоне. Обсерватория на пике Манас передаёт службе свои данные о погоде и снеге. Радар Кок-Дёбё близ Нуржана следит за осадками в Чуйской долине.",
       "title_map": "Карта погоды"
     }
   }
