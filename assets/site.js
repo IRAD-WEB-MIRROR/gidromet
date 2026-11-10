@@ -251,14 +251,19 @@
     d.air.forEach(function (a) { if (a.aqi > 100) { var c = tri(a.label); (air[c] = air[c] || []).push(tri(a.name)); } });
     var fg = stWx(d, MAP.st.filter(function (s) { return s.id === "alabel"; })[0], 0);
     if (fg && (fg.code === 73 || fg.code === 68)) out.push(esc(t("wSnowPass", { v: deg(fg.hi) })));
+    /* today's incidents (the shared list in today.json): the Service's own line for each, first in the strip */
+    var inc = (d.incidents && d.incidents.list || []).filter(function (x) {
+      return x.lines && x.lines.weather && x.state !== "ended" && (!x.end || Date.parse(x.end) > Date.now());
+    });
     if (d.season) {
-      if (d.season.fergana_gateway === "closed") out.unshift(esc(t("wGate")));
+      if (d.season.fergana_gateway === "closed" && !inc.some(function (x) { return x.kind === "pass"; })) out.unshift(esc(t("wGate")));
       if (d.season.avalanche && d.season.avalanche.level >= 3) out.push(esc(t("wAva", { l: tri(d.season.avalanche.label) })));
     }
     if (heavy.length) out.push(esc(t("wHeavy", { p: heavy.join(", ") })));
     if (frost.length) out.push(esc(t("wFrost", { v: deg(minLo), p: frost.join(", ") })));
     Object.keys(air).forEach(function (c) { out.push(esc(t("wAir", { c: c, p: air[c].join(", ") }))); });
     if (inv.length) out.push(esc(t("wInv", { p: inv.join(", ") })));
+    inc.reverse().forEach(function (x) { out.unshift((x.state === "upcoming" ? esc(t("wTomorrow")) : esc(fmtDate(d.date))) + ": " + esc(tri(x.lines.weather))); });
     el.innerHTML = out.length ? '<div class="warn"><div class="k">⚠ ' + esc(t("warnK")) + '</div><div class="v">' + out.map(function (x) { return "<b>" + x + "</b>"; }).join(" &nbsp;•&nbsp; ") + "</div></div>"
       : '<div class="warn calm"><div class="k">' + esc(t("calmK")) + '</div><div class="v">' + esc(t("calmV")) + "</div></div>";
   }
