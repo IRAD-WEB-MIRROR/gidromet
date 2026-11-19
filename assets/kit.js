@@ -197,9 +197,9 @@
    "kit_phone": "Tel.",
    "kit_board": "Zonanın bardık mamlekettik organdarının bosh orundarı Gubernatordun apparatının portalında da birge jarıyalanat:",
    "kit_nav": "Kızmat",
-   "kh1": "Jılıtuu mezgili: aba sapatı",
-   "kh2": "Too ashuuları: algachkı kar",
-   "kh3": "2026–27-jılkı kıshkı prognoz"
+   "kh1": "Irad Gidromet Nurzhandagy aba sapaty boyuncha maalymat berdi; turgundarga aldyn ala saktanuu aytyldy",
+   "kh2": "Jılıtuu mezgili: aba sapatı",
+   "kh3": "Too ashuuları: algachkı kar"
   },
   "ru": {
    "kit_home": "Главная",
@@ -248,9 +248,9 @@
    "kit_phone": "Тел.",
    "kit_board": "Вакансии всех государственных органов Зоны также публикуются вместе на портале Аппарата губернатора:",
    "kit_nav": "Служба",
-   "kh1": "Отопительный сезон: качество воздуха",
-   "kh2": "Горные перевалы: первый снег",
-   "kh3": "Прогноз на зиму 2026–27 годов"
+   "kh1": "Ирад Гидромет сообщил о качестве воздуха в Нуржане; жителям даны рекомендации на период инверсии",
+   "kh2": "Отопительный сезон: качество воздуха",
+   "kh3": "Горные перевалы: первый снег"
   }
  }
 });
